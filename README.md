@@ -2,6 +2,12 @@
 
 Proyecto de portafolio para prácticas en **Análisis y Desarrollo de Software**, **Analítica de Datos** e **Innovación Tecnológica**.
 
+## Demo en línea
+
+Aplicación publicada en Streamlit:
+
+https://5tmhlpnpr8pgljhviwroe6.streamlit.app
+
 ## Objetivo
 
 Simular un caso real de empresa donde se analizan clientes, pedidos y ventas usando SQL, MySQL, Python, Pandas y Streamlit.
@@ -26,17 +32,25 @@ Una empresa necesita responder:
 - Streamlit
 - Plotly
 
+## Funcionalidades del dashboard
+
+- Métricas principales de clientes, pedidos, ventas y clientes sin pedidos.
+- Tabla combinada de clientes y pedidos.
+- Filtro por ciudad.
+- Visualización de ventas por ciudad.
+- Identificación de clientes sin pedidos.
+
 ## Estructura
 
 ```text
 analitica-clientes-pedidos-sql-python/
 ├── README.md
 ├── requirements.txt
+├── runtime.txt
 ├── .gitignore
 ├── database/
 │   ├── schema_mysql.sql
-│   ├── seed_mysql.sql
-│   └── queries_mysql.sql
+│   └── seed_mysql.sql
 ├── data/
 │   ├── clientes.csv
 │   └── pedidos.csv
@@ -44,10 +58,7 @@ analitica-clientes-pedidos-sql-python/
 │   └── analisis_clientes_pedidos.py
 ├── app/
 │   └── dashboard_streamlit.py
-├── reports/
-│   └── .gitkeep
 └── docs/
-    ├── guia_sql_trabajo.md
     └── preguntas_entrevista.md
 ```
 
@@ -100,8 +111,9 @@ ORDER BY total_ventas DESC;
 ## Qué demuestra
 
 - Creación de tablas relacionales.
-- Uso de PK y FK.
+- Uso de claves primarias y foráneas.
 - Consultas con SELECT, WHERE, GROUP BY, HAVING, JOIN, LEFT JOIN, CASE y COALESCE.
-- Análisis con Python.
-- Creación de reportes.
-- Documentación profesional.
+- Análisis con Python y Pandas.
+- Creación de dashboard con Streamlit.
+- Publicación de una aplicación web de datos.
+- Documentación profesional de un proyecto técnico.
